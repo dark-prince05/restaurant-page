@@ -4,13 +4,18 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+header {
+  position: fixed;
+  background: white;
+  width: 100%;
+}
+
 nav {
   display: grid;
   grid-template-columns: repeat(3, 100px);
   justify-content: center;
   column-gap: 30px;
 }
-
 button {
   background: none;
   border: none;
@@ -50,6 +55,7 @@ button:hover {
 .menu-container {
   background: lightblue;
   display: grid;
+  padding: 50px 0;
   grid-template-columns: 1fr 2fr;
   gap: 20px 20px;
 }
@@ -61,8 +67,35 @@ button:hover {
 }
 
 .menu-contents {
-  font-size: 1.5em;
+  font-size: 1.4em;
   padding-top: 20px;
   white-space: pre-line;
   font-weight: bold;
+}
+
+.contactInfo {
+  background: lightblue;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  background: white;
+  height: 70vh;
+  width: 25vw;
+  border-radius: 20px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-details {
+  white-space: pre-line;
+  font-weight: bold;
+}
+
+.line {
+  width: 250px;
 }

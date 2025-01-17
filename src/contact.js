@@ -1,25 +1,38 @@
-export function contact(content) {
+export function contact() {
+  const contactInfo = createElement("div", "contactInfo");
   const form = createElement("div", "form");
-  const chef = createElement("div", "chef");
-  const manager = createElement("div", "manager");
-  const waiter = createElement("div", "waiter");
+  const chef = createElement("div", "contact-details");
+  const line1 = createElement("hr", "line");
+  const manager = createElement("div", "contact-details");
+  const line2 = line1.cloneNode(true);
+  const waiter = createElement("div", "contact-details");
 
-  chef.textContent = `The Chef 
+  chef.textContent = `Chef 
+
+                      Vinsmoke Sanji
                       555-666-7907
                       mailToChef@gmail.com`;
 
-  manager.textContent = `The manager 
-                      555-666-7908
-                      mailToManager@gmail.com`;
+  manager.textContent = `Manager 
 
-  waiter.textContent = `The Waiter 
+                      Roronoa Zoro
+                      555-666-7908
+                      mailToManager@gmail.com
+`;
+
+  waiter.textContent = `Waitress 
+
+                      Cat Bulgler Nami
                       555-666-7903
                       mailToWaiter@gmail.com`;
 
   form.append(manager);
+  form.append(line1);
   form.append(chef);
+  form.append(line2);
   form.append(waiter);
-  content.append(form);
+  contactInfo.append(form);
+  return contactInfo;
 }
 
 function createElement(elem, className) {

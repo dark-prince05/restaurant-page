@@ -10,9 +10,11 @@ const contactBtn = document.querySelector("#contact-btn");
 
 const home = homeTab();
 const menu = menuTab();
+const contact = contactTab();
+console.log(contact);
 
 window.addEventListener("load", () => {
-  content.append(menu);
+  content.append(contact);
   homeBtn.classList.add("borderB");
 });
 
@@ -32,6 +34,10 @@ menuBtn.addEventListener("click", () => {
   contactBtn.classList.remove("borderB");
 });
 
-conatactBtn.addEventListener("click", () => {
-  contactTab(content);
+contactBtn.addEventListener("click", () => {
+  content.textContent = "";
+  content.append(contact);
+  contactBtn.classList.add("borderB");
+  menuBtn.classList.remove("borderB");
+  homeBtn.classList.remove("borderB");
 });
