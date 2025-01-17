@@ -14,7 +14,7 @@ const contact = contactTab();
 console.log(contact);
 
 window.addEventListener("load", () => {
-  content.append(contact);
+  content.append(home);
   homeBtn.classList.add("borderB");
 });
 
