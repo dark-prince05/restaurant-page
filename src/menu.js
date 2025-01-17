@@ -15,19 +15,24 @@ export function menu() {
   const fish = createImage(fishPic);
 
   const lobsterDetails = createElement(
-    "Grilled Garlic Butter Lobster – Succulent lobster grilled to perfection and drizzled with a rich garlic butter sauce.",
+    `Grilled Garlic Butter Lobster: 
+     Succulent lobster grilled to perfection and drizzled with a rich garlic butter sauce.`,
   );
   const shrimpDetails = createElement(
-    "Spicy Cajun Shrimp – Juicy shrimp sautéed in a bold and flavorful Cajun spice mix.",
+    `Spicy Cajun Shrimp: 
+     Juicy shrimp sautéed in a bold and flavorful Cajun spice mix.`,
   );
   const salmonDetails = createElement(
-    "Lemon Herb Grilled Salmon – Fresh salmon fillet marinated in lemon juice, herbs, and olive oil, then grilled for a smoky taste.",
+    `Lemon Herb Grilled Salmon: 
+     Fresh salmon fillet marinated in lemon juice, herbs, and olive oil, then grilled for a smoky taste.`,
   );
   const fishDetails = createElement(
-    "Classic Fish & Chips – Crispy, golden-battered fish served with crunchy fries and tangy tartar sauce.",
+    `Classic Fish & Chips: 
+     Crispy, golden-battered fish served with crunchy fries and tangy tartar sauce.`,
   );
   const pastaDetails = createElement(
-    "Seafood Pasta Alfredo – A creamy pasta dish loaded with shrimp, scallops, and clams, tossed in a rich Alfredo sauce.",
+    `Seafood Pasta Alfredo: 
+     A creamy pasta dish loaded with shrimp, scallops, and clams, tossed in a rich Alfredo sauce.`,
   );
 
   menuContainer.append(lobster);
@@ -54,5 +59,6 @@ function createImage(img) {
 function createElement(content) {
   const tag = document.createElement("div");
   tag.textContent = content;
+  tag.classList.add("menu-contents");
   return tag;
 }

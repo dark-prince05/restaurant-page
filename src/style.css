@@ -51,11 +51,18 @@ button:hover {
   background: lightblue;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  row-gap: 20px;
-  align-items: center;
+  gap: 20px 20px;
 }
 
 .menu-items {
   width: 200px;
   justify-self: end;
+  border-radius: 20px;
+}
+
+.menu-contents {
+  font-size: 1.5em;
+  padding-top: 20px;
+  white-space: pre-line;
+  font-weight: bold;
 }
